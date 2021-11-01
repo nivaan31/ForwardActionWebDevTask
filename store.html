@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+    </head>
+    <body>
+       
+        <section class="container content-section">
+            
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 1</span>
+                    <img class="shop-item-image" src="Images/Album 1.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 2</span>
+                    <img class="shop-item-image" src="Images/Album 2.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                    <img class="shop-item-image" src="Images/Album 3.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                    <img class="shop-item-image" src="Images/Album 4.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class = "left">
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+    </div>
+
+    <div class = "right">
+        <section class="container content-section">
+            <h2 class="section-header2">CHECKOUT</h2>
+            <div id="form-main">
+  <div id="form-div">
+    <form class="form" id="form1">
+      
+      <p class="firstname">
+        <input name="firstname" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="First Name" id="firstname" />
+      </p>
+
+      <p class="lastname">
+        <input name="lastname" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder=" Last Name" id="name" />
+      </p>
+      
+      <p class="email">
+        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+      </p>
+      <p class="choosePaymentOption">
+
+        <div class = radio>
+            <label class="radiocontainer">Card
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+              </label>
+              <label class="radiocontainer">Paypal
+                <input type="radio" name="radio">
+                <span class="checkmark"></span>
+              </label>
+           
+          </div>
+          <p class="cardnumber">
+            <input name="cardnumber" type="number" class=" feedback-input" id="cardnumber" placeholder="Card Number" />
+          </p> 
+        <input type="date" id="expiryDate" placeholder="Expiry Date" class = "feedback-input2"/>
+   
+  
+        
+        <input type="number" id="CVV" placeholder="CVV" class = "feedback-input2"/>
+      </p>
+      
+      <div class="submit">
+        <input type="submit" class = "sendbutton"value="SEND" id="button-blue"/>
+        
+      </div>
+    </form>
+        </section>
+    </div>
+    </body>
+</html>
